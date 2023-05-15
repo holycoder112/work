@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int choice;
+   float money_amount;
+   cout<<"enter 1 money_amount to convert in in US dollar"<<endl;
+   cout<<"enter 2 money_amount to convert in Russian rubel"<<endl;
+   cout<<"enter 3 money_amount to convert in Japan yen"<<endl;
+   cin>>choice;
+   cin>>money_amount;
+   switch(choice){
+       case 1:
+       cout<<money_amount*(0.014)<<endl;
+       case 2:
+       cout<<money_amount<<endl;
+       case 3:
+       cout<<money_amount*(1.5)<<endl;
+       break;
+        default :
+        cout << "Choose a valid unit conversion!!!" << endl;
+       }
+      return 0; 
+}
